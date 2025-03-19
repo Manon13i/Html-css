@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Party Invitation</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-vector/balloons-ribbons-frame-with-golden-glitter_317810-230.jpg?w=826'); 
+            background-size: cover;
+            background-position: center x;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: rgb(156, 140, 51);
+            padding: 50px;
+        }
+        .invite-container {
+            background-color: rgba(135, 136, 132, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        .details {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invite-container">
+        <h1>You're Invited!</h1>
+        <h2>Join us for a Birthday Celebration</h2>
+        <div class="details">
+            <p><strong>Date:</strong> March 22, 2025</p>
+            <p><strong>Time:</strong> 5:00pm to 8:00pm</p>
+            <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+            <p><strong>RSVP:</strong> With games, cake, and friends galore,  
+                There'll be surprises and so much more!  <br>
+                Come share in the laughter, dance, and play,  
+                Let’s make it a magical day!  <br>
+                
+                Make sure to bring your brightest smile,  
+                We can't wait to party for a while!  <br>
+                At our place—don’t be late,  
+                We’re ready to celebrate!  </p>
+        </div>
+    </div>
+</body>
+</html>
