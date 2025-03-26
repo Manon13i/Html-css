@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/font
+    awesome.min.css">
+    <style>
+         * {
+           margin: 0;
+          padding: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+                url(https://static.vecteezy.com/system/resources/previews/027/183/857/large_2x/college-student-walking-to-university-campus-education-banner-concept-free-photo.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        nav img{
+            width: 100px;
+            height: auto;
+        }
+       nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .nav-links{
+        flex: 1;
+        text-align: right;
+       }
+       .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+       }
+      .nav-links ul li a{
+        color: #cda4a4;
+        text-decoration: none;
+        font-size: 13px ;
+      }
+      .nav-links ul li::after{
+        content:'' ;
+        width:0% ;
+        height: 2px;
+        background: #e97870;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      .nav-links ul li:hover::after{
+        width: 100%;
+      }
+      .text-box{
+        width: 90%;
+        color: white;
+        position: absolute;
+        top:50% ;
+        left:50% ;
+        transform:translate(-50%,-50%);
+        text-align: center;
+      }
+      .text-box h1{
+        font-size: 62px;
+      }
+      .text-box p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: #fff;
+      }
+      .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color:#fff;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font: size 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+      }
+      .hero-btn{
+        border: 1px solid #f44336;
+        background:#f44336 ;
+        transition:1s ;
+      }
+      nav.fa{
+        display: none;
+      }
+      <!----Course-->
+      .course{
+        width:80% ;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+      }
+      h1{
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+      }
+      p{
+        color: #777;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+      }
+      .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .course-col{
+        flex-basis: 31%;
+        background: #c3c1e0;
+        border-radius: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+        transition: 0.5s;
+      }
+      h3{
+        text-align: center;
+        font-weight:600 ;
+        margin: 10px 0;
+      }
+      .course-col:hover{
+        box-shadow: 0 0 20-x 0-x rgba(0,0,0,0.2);
+      }
+      <!--Campus-->
+      .campus{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+      }
+      .campus-col{
+        flex-basis:32%;
+        border-radius: 10px;
+        margin-bottom: 300px;
+        position: relative;
+        overflow: hidden;
+      }
+      .campus-col img{
+        width: 100%;
+        display: block;
+      }
+      .layer{
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+      }
+      .layer:hover{
+        background:rgba(226,0,0,0.7); ;
+      }
+      .layer h3{
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+      }
+      .layer:hover h3{
+        bottom: 49%;
+        opacity:0 ;
+        transition: 0.5s;
+      }
+      <!----Facilities----->
+      .facilities{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top:100px ;
+      }
+      .facilities-col{
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+      }
+      .facilities-col img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      .facilities-col p{
+        padding: 0;
+      }
+      .facilities-col h3{
+        margin-top: 16px;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="https://img.freepik.com/premium-vector/campus-collage-university-education-logo-design-template_7492-59.jpg?w=2000" alt="Logo"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href class="">HOME</a></li>
+                    <li><a href class="">ABOUT</a></li>
+                    <li><a href class="">COURSE</a></li>
+                    <li><a href class="">BLOG</a></li>
+                    <li><a href class="">CONTACT</a></li>
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()" ></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world.
+                You just need to learn HTML,CSS,<br>
+                Javascript and you are good to go.</p>
+                <a href="" class="hero-btn">Visit us to know more</a>
+
+        </div>
+    </section>
+    <!------Course-->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolores iure velit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>INTERMEDIATE</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas minima ullam cumque veniam quasi, 
+                    alias ipsum optio dolore sint voluptate illo minus vitae,
+                     quo Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus unde accusantium animi.</p>
+            </div>
+           <div class="course-col">
+                <h3>DEGREE</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas minima ullam cumque veniam quasi, 
+                    alias ipsum optio dolore sint voluptate illo minus vitae,
+                     quo Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus unde accusantium animi.</p>
+            </div>
+            <div class="course-col">
+                <h3>POST GRADUATION</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas minima ullam cumque veniam quasi, 
+                    alias ipsum optio dolore sint voluptate illo minus vitae,
+                     quo Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus unde accusantium animi.</p>
+            </div>
+        </div>
+    </section>
+    <!---Campus-->
+    <section class="Campus">
+     <h1>Our Global Campus</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur .</p>
+     <div class="row">
+        <div class="campus-col">
+        <img src="https://a.cdn-hotels.com/gdcs/production198/d415/629e9c30-58ef-11e8-a5ee-0242ac110030.jpg">
+        <div class="layer">
+            <h3>LONDON</h3>
+        </div>
+    </div>
+ <div class="campus-col">
+    <img src="https://static01.nyt.com/images/2012/05/06/nyregion/06BIG_SPAN/BIG-superJumbo.jpg">
+    <div class="layer">
+        <h3>NEW YORK</h3>
+    </div>
+</div>
+<div class="campus-col">
+    <img src="https://i.pinimg.com/originals/36/c7/1b/36c71bff94b24169625225f2648e9f76.jpg">
+    <div class="layer">
+        <h3>WASHINGTON</h3>
+    </div>
+</div>
+</div>
+    </section>
+<!---------Facilities--------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+         possimus optio consequatur exercitationem!</p>
+<div class="row">
+    <div class="facilities-col">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.hbEXLXNdPUSvcp4QjM1BigHaFC&pid=Api&P=0&h=180">
+        <h3>World Class Library</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Obcaecati delectus dicta quas itaque!</p> 
+    </div>
+    <div class="facilities-col">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.WDV28Q-qNxtDvFnl5_l1QQAAAA&pid=Api&P=0&h=180">
+        <h3>Largest Playground</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Obcaecati delectus dicta quas itaque!</p> 
+    </div>
+    <div class="facilities-col">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.PsUxeqCg-aaj4NqvpDx7MgHaEr&pid=Api&P=0&h=180">
+        <h3>Tasty and Healthy foods</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Obcaecati delectus dicta quas itaque!</p> 
+    </div>
+</div>
+</section>
+
+    <!------------------JAVASCRIPT FOR TOGGLE MENU--------------->
+    <script>
+        var navLinks = document.getElementById("nav links");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
