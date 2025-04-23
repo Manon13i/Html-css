@@ -1,24 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Certificate</title>
+  <meta charset="UTF-8">
+  <title>Quiz website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="certificate">
-        <img src="https://static.vecteezy.com/system/resources/previews/012/352/057/original/graduation-hat-illustration-in-the-flat-style-graduation-cap-isolated-on-the-transparent-background-vector.jpg">
-        <h2>Certificate of Achievement</h2>
-        <p>This is to certify that</p>
-        <h3>SARA</h3>
-        <p>has successfully completed the course in</p>
-        <h3>Web development</h3>
-        <h4> Date: April 18 2025</h4>
-        <div class="signature">
-            <p>___________</p>
-            <p>Signature</p>
-        </div>
+
+<div class="quiz-container">
+  <!-- Question 1 -->
+  <section id="q1">
+    <div class="progress">Question 1 of 5</div>
+    <h3>What is the capital of France?</h3>
+    <ul>
+      <li>London</li>
+      <li><strong>Paris</strong></li>
+      <li>Rome</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q2" class="btn">Next</a>
     </div>
+  </section>
+
+  <!-- Question 2 -->
+  <section id="q2">
+    <div class="progress">Question 2 of 5</div>
+    <h3>Which planet is known as the Red Planet?</h3>
+    <ul>
+      <li>Earth</li>
+      <li><strong>Mars</strong></li>
+      <li>Jupiter</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q1" class="btn">Prev</a>
+      <a href="#q3" class="btn">Next</a>
+    </div>
+  </section>
+
+  <!-- Question 3 -->
+  <section id="q3">
+    <div class="progress">Question 3 of 5</div>
+    <h3>Which language is used for styling web pages?</h3>
+    <ul>
+      <li>HTML</li>
+      <li><strong>CSS</strong></li>
+      <li>Python</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q2" class="btn">Prev</a>
+      <a href="#q4" class="btn">Next</a>
+    </div>
+  </section>
+
+  <!-- Question 4 -->
+  <section id="q4">
+    <div class="progress">Question 4 of 5</div>
+    <h3>Which gas do plants absorb?</h3>
+    <ul>
+      <li>Oxygen</li>
+      <li><strong>Carbon Dioxide</strong></li>
+      <li>Hydrogen</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q3" class="btn">Prev</a>
+      <a href="#q5" class="btn">Next</a>
+    </div>
+  </section>
+
+  <!-- Question 5 -->
+  <section id="q5">
+    <div class="progress">Question 5 of 5</div>
+    <h3>What is the boiling point of water?</h3>
+    <ul>
+      <li>90°C</li>
+      <li><strong>100°C</strong></li>
+      <li>110°C</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q4" class="btn">Prev</a>
+      <span class="btn disabled">End</span>
+    </div>
+  </section>
+
+</div>
+
 </body>
 </html>

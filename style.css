@@ -1,54 +1,82 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+
+  body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f3f4f6;
-    margin: 50px;
-}
+    background: #eef2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 
-img {
+  .quiz-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  section {
+    display: none;
+  }
+
+  section:first-of-type {
     display: block;
-    margin: 0 auto; 
-    width: 100px; 
-    height: auto; 
-    margin-bottom: 20px; 
-    border: 2px solid #d4af37; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
-}
+  }
 
-.certificate {
-    border: 5px solid #ccb160;
-    padding: 20px;
-    background-color: white;
-    width: 60%;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-}
+  section:target {
+    display: block;
+  }
+  
+  section:target {
+    display: block;
+    animation: fade 0.3s ease-in-out;
+  }
 
-h2 {
-    color: #d4af37; 
-    font-size: 24px;
-}
+  section:first-of-type {
+    display: block;
+  }
 
-h3 {
-    color: #333;
-    font-size: 20px;
-    margin: 10px 0;
-}
+  h3 {
+    margin-top: 0;
+  }
 
-p {
-    font-size: 16px;
-    color: #666;
-}
+  ul {
+    padding-left: 1rem;
+  }
 
-.signature {
-    margin-top: 30px;
+  li {
+    margin: 0.4rem 0;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
     font-size: 14px;
-    text-align: left;
-    padding-left: 40%;
-}
+    transition: background 0.2s;
+  }
 
-.signature p {
-    margin: 5px 0;
-}
+  .btn:hover {
+    background: #0056b3;
+  }
+
+  .progress {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #555;
+  }
